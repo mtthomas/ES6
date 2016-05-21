@@ -13,7 +13,7 @@ gulp.task('slides', function() {
 })
 
 gulp.task('watch', function() {
-    gulp.watch(['index.html', 'js/index.js'], ['slides']);
+    gulp.watch(['index.html', 'js/index.js', 'css/application.css'], ['slides']);
 })
 
 gulp.task('default', ['connect', 'watch']);
