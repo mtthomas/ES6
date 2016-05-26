@@ -1,24 +1,26 @@
-.reveal .slides {
-    text-align: left;
+.container {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
 }
 
-.reveal h1,
-.reveal h2,
-.reveal h3 {
-    text-transform: none;
-}
-
-.reveal table {
-  margin: 0;
-}
-
-.reveal table td {
-  border: 0;
+.container > div {
+  margin-right: 1em;
+  width: 50%;
 }
 
 .reveal section img {
-  margin: auto;
-  background: none;
-  border: none;
+  background: 0;
+  border: 0;
   box-shadow: none;
+}
+
+.reveal section pre {
+  box-shadow: none;
+}
+
+.reveal .keyword {
+  font-weight: bold;
+  color: #B7410E;
+  text-transform: none;
 }
