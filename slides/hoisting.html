@@ -1,0 +1,17 @@
+<section>
+    <h2>Hoisting</h2>
+    <pre><code data-trim class="js">
+function functionScope(){
+  var index,
+      newIndex;
+
+  for(index = 0; index < 10; index += 1){
+    //execute logic
+  }
+
+  //index is scoped to the function
+  newIndex = index - 10;
+}
+    </code></pre>
+    <p>variables are hoisted to the start of the function</p>
+</section>

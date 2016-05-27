@@ -1,0 +1,15 @@
+<section>
+    <h2 class="keyword">let</h2>
+    <pre><code data-trim class="js">
+function blockScope(){
+  for(let index = 0; index < 10; index += 1){
+    //execute the same logic
+  }
+
+  //ERROR: index is scoped/contained to the for loop
+  let newIndex = index - 10;
+}
+  </pre>
+</code>
+<p>variables are scoped to the nearest block</p>
+</section>

@@ -14,7 +14,6 @@
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="lib/css/zenburn.css"/>
         <link rel="stylesheet" href="lib/css/grids.css"/>
-        <link rel="stylesheet" href="lib/css/tables.css"/>
 
         <link rel="stylesheet" href="css/application.css"/>
     </head>
@@ -22,173 +21,22 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
-                    <h1>ES6</h1>
-                    <h2>Matt Thomas</h2>
-                    <h2>6-23-2016</h2>
-                </section>
-                <section>
-                    <div class="container">
-                        <div>
-                            <h2>Introduction</h2>
-                            <ul>
-                                <li class="fragment">
-                                    Matt Thomas
-                                </li>
-                                <li class="fragment">
-                                    2+ years at Centare
-                                </li>
-                                <li class="fragment">
-                                    Front-End Developer
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <img src="img/portrait.png" alt="image of me"/>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <section>
-                        <h2>JavaScript</h2>
-                        <table>
-                            <tr>
-                                <td>June 1995</td>
-                                <td>Brendan Eich creates JS in 10 days</td>
-                            </tr>
-                            <tr>
-                                <td>June 1997</td>
-                                <td>ECMAScript 1</td>
-                            </tr>
-                            <tr>
-                                <td>June 1998</td>
-                                <td>ECMAScript 2</td>
-                            </tr>
-                            <tr>
-                                <td>December 1999</td>
-                                <td>ECMAScript 3</td>
-                            </tr>
-                            <tr>
-                                <td>December 2009</td>
-                                <td>ECMAScript 5</td>
-                            </tr>
-                        </table>
-                    </section>
-                    <section>
-                        <div>
-                            <h2>ECMAScript 6</h2>
-                            <ul>
-                                <li class="fragment">June 2015</li>
-                                <li class="fragment">Designed for modern applications</li>
-                                <li class="fragment">New features</li>
-                                <li class="fragment">Simplifies development</li>
-                                <li class="fragment">Similar to .Net/Java</li>
-                                <li class="fragment">Lack of browser support</li>
-                            </ul>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <img src="img/babel.png"/>
-                </section>
-                <section>
-                  <h2>Breaking up with Semicolons</h2>
-                  <img src="img/sad_robot.jpg"  />
-                </section>
-                <section>
-                    <section>
-                        <h2 class="keyword">var</h2>
-                        <pre><code data-trim class="js">
-  function functionScope(){
-    for(var index = 0; index < 10; index += 1){
-      //execute logic
-    }
-
-    //index is scoped to the function
-    var newIndex = index - 10;
-  }
-                        </code></pre>
-                        <p>variables are scoped to the nearest function</p>
-                    </section>
-                    <section>
-                        <h2>Hoisting</h2>
-                        <pre><code data-trim class="js">
-  function functionScope(){
-    var index,
-        newIndex;
-
-    for(index = 0; index < 10; index += 1){
-      //execute logic
-    }
-
-    //index is scoped to the function
-    newIndex = index - 10;
-  }
-                        </code></pre>
-                        <p>variables are hoisted to the start of the function</p>
-                    </section>
-                    <section>
-                        <h2 class="keyword">let</h2>
-                        <pre><code data-trim class="js">
-function blockScope(){
-  for(let index = 0; index < 10; index += 1){
-    //execute the same logic
-  }
-
-  //ERROR: index is scoped/contained to the for loop
-  let newIndex = index - 10;
-}
-                      </pre>
-                    </code>
-                    <p>variables are scoped to the nearest block</p>
-                </section>
-            </section>
-            <section>
-                <h2 class="keyword">const</h2>
-                <pre><code data-trim class="js">
-function usingConst(){
-  const message = "Success"
-
-  const messages = {
-    success: "Success",
-    error: "Error"
-  }
-
-  //ERROR: message is constant
-  message = "Error"
-
-  //VALID: const is not recursive
-  messages.success = "Error"
-}
-            </pre>
-            </code>
-            <p>not recursive</p>
-        </section>
-        <section>
-            <h2>String Interpolation</h2>
-            <pre><code data-trim class="js">
-function usingStringInterpolation(){
-  const user = {
-    firstName: "Matt",
-    lastName: "Thomas",
-    city: 'Milwaukee'
-    state: 'WI'
-    country: "USA"
-  }
-
-  const singleLine = `{user.firstName} {user.lastName} from {user.country}`
-
-  const multiLine = `{user.firstName} {user.lastName}
-{user.city} {user.state}
-{user.country}`
-}
-              </pre>
-        </code>
-    </section>
-</div>
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/index.js"></script>
-</body>
+              <section data-external="slides/title.html"></section>
+              <section data-external="slides/introduction.html"></section>
+              <section data-external="slides/js-history.html"></section>
+              <section data-external="slides/es6-overview.html"></section>
+              <section data-external="slides/semicolons.html"></section>
+              <section data-external="slides/var.html"></section>
+              <section data-external="slides/hoisting.html"></section>
+              <section data-external="slides/let.html"></section>
+              <section data-external="slides/const.html"></section>
+              <section data-external="slides/string-interpolation.html"></section>
+            </div>
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script src="lib/js/jquery-2.2.4.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 
 </html>

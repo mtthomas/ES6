@@ -1,0 +1,21 @@
+<section>
+    <h2 class="keyword">const</h2>
+    <pre><code data-trim class="js">
+function usingConst(){
+  const message = "Success"
+
+  const messages = {
+    success: "Success",
+    error: "Error"
+  }
+
+  //ERROR: message is constant
+  message = "Error"
+
+  //VALID: const is not recursive
+  messages.success = "Error"
+}
+</pre>
+</code>
+<p>not recursive</p>
+</section>

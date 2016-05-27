@@ -1,0 +1,14 @@
+<section>
+    <h2 class="keyword">var</h2>
+    <pre><code data-trim class="js">
+function functionScope(){
+  for(var index = 0; index < 10; index += 1){
+    //execute logic
+  }
+
+  //index is scoped to the function
+  var newIndex = index - 10;
+}
+    </code></pre>
+    <p>variables are scoped to the nearest function</p>
+</section>
