@@ -29,13 +29,13 @@
         width: '90%',
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [{
-            src: 'plugin/highlight/highlight.js',
+            src: 'ext/reveal/plugin/highlight/highlight.js',
             async: false,
             callback: function() {
                 hljs.initHighlightingOnLoad();
             },
         }, {
-            src: 'plugin/external/external.js',
+            src: 'ext/reveal/plugin/external/external.js',
             condition: function() {
                 return !!document.querySelector('[data-external]');
             }
