@@ -24,3 +24,8 @@
   color: #B7410E;
   text-transform: none;
 }
+
+.reveal img {
+	height: 400px;
+	weight: auto;
+}

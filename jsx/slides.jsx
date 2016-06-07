@@ -1,6 +1,12 @@
 import React from 'react'
 
 import Title from './title.jsx'
+import Introduction from './introduction.jsx'
+import JsHistory from './js-history.jsx'
+import Es6Overview from './es6-overview.jsx'
+import Babel from './babel.jsx'
+import Semicolons from './semicolons.jsx'
+import Let from './let.jsx'
 
 export default class Slides extends React.Component {
   componentDidMount(){
@@ -27,6 +33,12 @@ export default class Slides extends React.Component {
     return (
       <div className="slides">
         <Title />
+        <Introduction />
+        <JsHistory />
+        <Es6Overview />
+        <Babel />
+        <Semicolons />
+        <Let />
       </div>
     )
   }
