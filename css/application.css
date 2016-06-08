@@ -1,31 +1,39 @@
 .container {
-	display: -ms-flex;
-	display: -webkit-flex;
-	display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
 }
 
 .container > div {
-  margin-right: 1em;
-  width: 50%;
+    margin-right: 1em;
+    width: 50%;
 }
 
 .reveal section img {
-  background: 0;
-  border: 0;
-  box-shadow: none;
+    background: 0;
+    border: 0;
+    box-shadow: none;
 }
 
 .reveal section pre {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 .reveal .keyword {
-  font-weight: bold;
-  color: #B7410E;
-  text-transform: none;
+    font-weight: bold;
+    color: #B7410E;
+    text-transform: none;
 }
 
 .reveal img {
-	height: 400px;
-	weight: auto;
+    height: 400px;
+    weight: auto;
+}
+
+h3.pass {
+    color: green;
+}
+
+h3.fail {
+    color: red;
 }

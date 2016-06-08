@@ -1,43 +1,40 @@
 import React from 'react'
+import {expect} from 'chai'
 import slide from './slide.jsx'
 
-const esSixExample = `function blockScope(){
-  for(let index = 0; index < 10; index += 1){
-    //...
-  }
+const babel = require("babel-core")
 
-  //ERROR: index is scoped/contained to the for loop
-  newIndex = index - 10
-
-  if(...){
-    let message = "hello world"
-  }
-
-  //ERROR: message is scoped/contained to the if statement
-  message = "goodnight world"
-
-}`
-
+////////////
+//let.jsx //
+////////////
 const esFiveExample = `function functionScope(){
-  for(var index = 0; index < 10; index += 1){
-    //...
-  }
-
-  if(...){
+  if(true){
     var message = "hello world";
   }
 
-  index = index - 10;
-  message = "goodnight world";
+  expect(message).to.be.defined;
+}`
+
+const esSixExample = `function blockScope(){
+  if(true){
+    let message = "hello world"
+  }
+
+  expect(message).to.be.undefined
 }`
 
 const test = function(){
-  
+  if(true){
+    let message = "hello world"
+  }
+
+  expect(message).to.be.defined
 }
 
 export default slide({
   title: "Block Scoping",
   esSixExample,
   esFiveExample,
-  imageSource: "img/blocks.png"
+  imageSource: "img/blocks.png",
+  test
 })
