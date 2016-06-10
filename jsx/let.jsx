@@ -1,8 +1,4 @@
-import React from 'react'
-import {expect} from 'chai'
 import slide from './slide.jsx'
-
-const babel = require("babel-core")
 
 ////////////
 //let.jsx //
@@ -23,18 +19,9 @@ const esSixExample = `function blockScope(){
   expect(message).to.be.undefined
 }`
 
-const test = function(){
-  if(true){
-    let message = "hello world"
-  }
-
-  expect(message).to.be.defined
-}
-
 export default slide({
   title: "Block Scoping",
   esSixExample,
   esFiveExample,
-  imageSource: "img/blocks.png",
-  test
+  imageSource: "img/block.svg",
 })

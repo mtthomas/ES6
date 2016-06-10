@@ -19,15 +19,14 @@
     box-shadow: none;
 }
 
+.reveal section pre code {
+	font-size: 1.25em;
+}
+
 .reveal .keyword {
     font-weight: bold;
     color: #B7410E;
     text-transform: none;
-}
-
-.reveal img {
-    height: 400px;
-    weight: auto;
 }
 
 h3.pass {
