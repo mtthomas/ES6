@@ -1,16 +1,17 @@
-<h2>Spread Parameter</h2>
+<h2>Spread Operator</h2>
 <pre>
-    <code class="js">
-  function(users){
-    return [
-      ...users,
-      {
-        firstName: "Matt",
-        lastName: "Thomas",
-        city: "Milwaukee",
-        state: "WI"
-      }
-    ]
-  }
+    <code class="js" data-trim>
+const users = [{
+  firstName: "John"
+  lastName: "Smith"
+}]
+
+//creates a new Array
+const newUsers = [
+  ...users,
+  {
+    firstName: "Jame",
+    lastName: "Smith"
+}]
       </code>
 </pre>

@@ -3,11 +3,11 @@
     <pre><code data-trim class="js">
 function blockScope(){
   for(let index = 0; index < 10; index += 1){
-    //execute the same logic
+    //index is scoped to this block
   }
 
-  //ERROR: index is scoped/contained to the for loop
-  let newIndex = index - 10;
+  //ERROR: index is undefined
+  let newIndex = index - 10
 }
   </pre>
 </code>

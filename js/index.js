@@ -1,4 +1,6 @@
 Reveal.initialize({
+    width: 1366,
+    height: 768,
     dependencies: [
         // Syntax highlight for <code> elements
         {

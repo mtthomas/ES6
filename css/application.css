@@ -4,7 +4,7 @@
     display: flex;
 }
 
-.container > div {
+.container> div {
     margin-right: 1em;
     width: 50%;
 }
@@ -17,10 +17,13 @@
 
 .reveal section pre {
     box-shadow: none;
+    font-size: 24px;
+    margin-top: 0;
+    line-height: inherit;
 }
 
 .reveal section pre code {
-	font-size: 1.25em;
+    max-height: none;
 }
 
 .reveal .keyword {
@@ -29,13 +32,6 @@
     text-transform: none;
 }
 
-h3.pass {
-    color: green;
+.reveal h2 {
+  margin: 0;
 }
-<<<<<<< HEAD
-
-h3.fail {
-    color: red;
-}
-=======
->>>>>>> parent of 73f72f8... Creating the first slide using react

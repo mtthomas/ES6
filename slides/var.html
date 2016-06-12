@@ -3,10 +3,10 @@
     <pre><code data-trim class="js">
 function functionScope(){
   for(var index = 0; index < 10; index += 1){
-    //execute logic
+    //index is scoped to the function
   }
 
-  //index is scoped to the function
+  //index is defined
   var newIndex = index - 10;
 }
     </code></pre>
