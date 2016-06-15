@@ -1,12 +1,16 @@
-.container {
+.grid {
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
 }
 
-.container> div {
-    margin-right: 1em;
+.grid__column {
+    margin-right: 0;
     width: 50%;
+}
+
+.reveal .title--center{
+  margin-top: 25%;
 }
 
 .reveal section img {
@@ -17,21 +21,18 @@
 
 .reveal section pre {
     box-shadow: none;
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 0;
     line-height: inherit;
 }
 
 .reveal section pre code {
     max-height: none;
+    padding: 7px;
 }
 
 .reveal .keyword {
     font-weight: bold;
     color: #B7410E;
     text-transform: none;
-}
-
-.reveal h2 {
-  margin: 0;
 }

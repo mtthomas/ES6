@@ -1,0 +1,34 @@
+<div class="grid">
+  <div class="grid__column fragment">
+    <h3>ES5</h3>
+    <pre>
+      <code data-trim class="js">
+function Person(){
+  var self = this;
+
+  this.name = "John Smith";
+
+  setInterval(function(){
+    //this is undefined
+    console.log(self.name)
+  }, 1000)
+}
+      </code>
+    </pre>
+  </div>
+  <div class="grid__column fragment">
+    <h3>ES6</h3>
+    <pre>
+      <code data-trim class="js">
+function Person(){
+  this.name = "John Smith";
+
+  setInterval(() => {
+    console.log(this.name)
+  }, 1000)
+}
+      </code>
+    </pre>
+  </div>
+</div>
+<p>Arrow functions capture the <span class="keyword">this</span> context of their parent</p>
