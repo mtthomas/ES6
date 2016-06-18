@@ -1,17 +1,19 @@
-<h2>String Interpolation</h2>
-<pre>
-  <code data-trim class="js">
+<h2>`Back Quote`</h2>
+<pre><code data-trim class="js">
 let user = {
-  firstName: "John",
-  lastName: "Smith",
-  username: "JSMITH"
+  firstName: "John Smith",
+  address: "5739 Laurel Lane",
+  city: "Lawndale",
+  state: "CA",
+  postalCode: "90260"
 }
-
-const log = `${user.firstName} ${user.lastName}
-username is ${user.username}`
-
-//ES5
-const logTwo = user.firstName + " " user.lastName + "\n"
-+ "username is " user.username
-  </code>
-</pre>
+const address = `${user.firstName} ${user.lastName}
+${user.address}
+${user.city} ${user.state} ${user.postalCode}`
+/*
+John Smith
+5739 Laurel Lane
+Lawndale CA 90260
+*/
+</code></pre>
+<h3>interpolation and multi-line</h3>

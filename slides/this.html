@@ -1,0 +1,23 @@
+<h2><span class="keyword">this</span> Keyword</h2>
+<div class="grid">
+  <ul class="grid__column">
+    <li>Calling context</li>
+    <li>Modified with bind</li>
+    <li>Strict vs. non-strict</li>
+  </ul>
+  <pre class="grid__column"><code class="js" data-trim data-noescape>
+  function example(){
+    "use strict";
+    return this === undefined //true
+  }
+  example();
+
+  var Car = {
+    tires: 4
+    assemble: function(){
+      this.tires === 4; //true
+    }
+  }
+  car.assemble();
+</code></pre>
+</div>

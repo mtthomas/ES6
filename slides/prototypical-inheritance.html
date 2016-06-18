@@ -1,0 +1,25 @@
+<h2>Prototypical Inheritance</h2>
+<div class="grid">
+  <ul class="grid__column">
+    <li>Prototype chain</li>
+    <li>Lack of a super keyword</li>
+    <li>Multiple ways to inherit</li>
+  </ul>
+  <pre class="grid__column"><code>
+function Mammal(){
+  /* initialize Mammal */
+}
+Mammal.prototype.speak = function(){
+  /* speak */
+}
+
+function Dog(){
+  /* initialize Dog */
+}
+Dog.prototype = new Mammal();
+Dog.prototype.constructor = Dog;
+
+var dog = new Dog();
+dog.speak();
+</code></pre>
+</div>

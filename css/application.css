@@ -6,7 +6,6 @@
 
 .grid__column {
     margin-right: 0;
-    width: 50%;
 }
 
 .reveal .title--center{
@@ -21,7 +20,7 @@
 
 .reveal section pre {
     box-shadow: none;
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 0;
     line-height: inherit;
 }
