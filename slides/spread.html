@@ -1,17 +1,19 @@
 <h2>Spread Operator</h2>
-<pre>
-    <code class="js" data-trim>
-const users = [{
-  firstName: "John"
-  lastName: "Smith"
-}]
+<pre><code class="js" data-trim>
+const wrestlers = ["Ultra Hogan", "Perfect Threat"]
 
-//creates a new Array
-const newUsers = [
-  ...users,
-  {
-    firstName: "Jame",
-    lastName: "Smith"
-}]
-      </code>
-</pre>
+const lineup = [
+  "Fire Vendetta",
+  ...wrestlers,
+  "Silicon Assassin"
+]
+
+console.log(lineup)
+/*[
+  "Fire Vendetta",
+  "Ultra Hogan",
+  "Perfect Threat",
+  "Silicon Assassin"
+]*/
+</code></pre>
+<h3>immutability</h3>

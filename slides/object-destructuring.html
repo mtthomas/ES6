@@ -1,0 +1,20 @@
+<h3>Destructuring</h3>
+<pre><code class="js" data-trim>
+function createUser(){
+  return {
+    firstName: "John",
+    lastName: "Smith",
+    userId: "JS2016"
+  }
+}
+
+let {
+  firstName: firstName,
+  lastName,
+  userId: uid
+} = createUser()
+
+console.log(firstName) //John
+console.log(lastName) //Smith
+console.log(uid) //JS2016
+</code></pre>

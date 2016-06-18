@@ -1,0 +1,18 @@
+<h3>Object Literals</h3>
+<pre><code data-trim class="js">
+function generateId(){
+  console.log("generating an id")
+}
+const prefix = "prefix"
+
+
+let factory = {
+  generateId,
+  prefix,
+  suffix: "suffix"
+}
+
+console.log(factory.generateId()) //generating an id
+console.log(factory.prefix) //prefix
+console.log(factory.suffix) //suffix
+</code></pre>

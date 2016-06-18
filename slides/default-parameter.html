@@ -1,14 +1,12 @@
-<h2>Default Parameters</h2>
-<pre>
-    <code class="js" data-trim>
+<h3>Default Parameters</h3>
+<pre><code class="js" data-trim>
 function createContestant(firstName, lastName, country = "USA"){
-  return `{firstName} {lastName} ({country})`
+  return `${firstName} ${lastName} (${country})`
 }
 
-//one is equal to "John Smith (USA)"
-const one = createContestant("John", "Smith")
+//John Smith (USA)
+console.log(createContestant("John", "Smith"))
 
-//two is equal to "Jane Doe (CAN)"
-let two = createContestant("Jane", "Doe", "CAN")
-      </code>
-</pre>
+//Jane Doe (CAN)
+console.log(createContestant("Jane", "Doe", "CAN"))
+</code></pre>

@@ -1,0 +1,16 @@
+<h3>Destructuring</h3>
+<pre><code class="js" data-trim>
+function buildPizza({
+  size="large",
+  toppings=["cheese"],
+  placed,
+}){
+  console.log(`(${placed}) Building a ${size} pizza with ${toppings}`)
+}
+
+buildPizza({
+  toppings: ["sausage", "cheese"],
+  placed: "18:00"
+})
+//Building a large pizza with sausage,cheese
+</code></pre>

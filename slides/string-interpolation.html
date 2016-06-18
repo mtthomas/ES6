@@ -1,19 +1,21 @@
-<h2>`Back Quote`</h2>
+<h3>`String Interpolation and Multi-Line`</h3>
 <pre><code data-trim class="js">
 let user = {
-  firstName: "John Smith",
+  name: "John Smith",
   address: "5739 Laurel Lane",
   city: "Lawndale",
   state: "CA",
   postalCode: "90260"
 }
-const address = `${user.firstName} ${user.lastName}
+
+const address = `${user.name}
 ${user.address}
 ${user.city} ${user.state} ${user.postalCode}`
+
+console.log(address)
 /*
 John Smith
 5739 Laurel Lane
 Lawndale CA 90260
 */
 </code></pre>
-<h3>interpolation and multi-line</h3>

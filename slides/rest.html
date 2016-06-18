@@ -1,17 +1,20 @@
-<h2>Rest Parameter</h2>
-<pre>
-    <code class="js" data-trim>
+<h3>Rest Parameter</h3>
+<pre><code class="js" data-trim>
 function sendMessages(...messages){
-  //messages is an Array
-  console.log(`Sending {messages.length} messages`)
+  console.log(`sending ${messages.length} messages`)
 
-  messages.forEach(function(message){/*...*/})
+  messages.forEach(function(message){
+    console.log(message)
+  })
 }
 
 sendMessages(
   "good morning",
-  "good afternoon",
-  "good evening"
+  "good afternoon"
 )
-      </code>
-</pre>
+/*
+sending 2 messages
+good morning
+good afternoon
+*/
+</code></pre>
