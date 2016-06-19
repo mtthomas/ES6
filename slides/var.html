@@ -1,12 +1,15 @@
 <h2 class="keyword">var</h2>
 <pre><code data-trim class="js">
-function functionScope(){
-  for(var index = 0; index < 10; index += 1){
-    //index is scoped to the function
+function functionScope(addOffset){
+  for(var index = 0; index < 10; index += 1){/*...*/}
+
+  if(addOffset){
+    var offset = 5
   }
 
-  //index is defined
-  var newIndex = index - 10;
+  return newIndex = index - 10 + offset
 }
+
+console.log(functionScope(true)); //5
     </code></pre>
 <h3>function scope</h3>

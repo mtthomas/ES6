@@ -8,11 +8,13 @@ function usingConst(){
     error: "Error"
   }
 
-  //INVALID: message is already assigned
+  //Uncaught TypeError: Assignment to constant variable.
   message = "Error"
 
-  //VALID: const is not recursive
   messages.success = "Error"
+
+  //Error
+  console.log(messages.success)
 }
 </pre>
 </code>

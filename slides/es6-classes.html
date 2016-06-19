@@ -1,0 +1,19 @@
+<h2>ES6 Classes</h2>
+<pre><code class="js" data-trim>
+class Mammal{
+  constructor(numberOfLegs){
+    this.numberOfLegs = numberOfLegs
+  }
+  walk(){ return "walking" }
+}
+
+const mammal = new Mammal(2)
+console.log(mammal.numberOfLegs) //2
+console.log(mammal.walk()) //walking
+
+/*
+//TypeError: Class constructor Mammal cannot be invoked without 'new'(…)
+const mammal = Mammal()
+ */
+</code></pre>
+<h3>syntactical sugar</h3>

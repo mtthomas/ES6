@@ -1,13 +1,18 @@
 <h2 class="keyword">let</h2>
 <pre><code data-trim class="js">
-function blockScope(){
-  for(let index = 0; index < 10; index += 1){
-    //index is scoped to this block
+function blockScope(addOffset){
+  for(let index = 0; index < 10; index += 1){/*...*/}
+
+  if(addOffset){
+    let offset = 5
   }
 
-  //ERROR: index is undefined
-  let newIndex = index - 10
+  return newIndex = index - 10 + offset;
 }
+
+//Uncaught ReferenceError: index is not defined(…)
+//Uncaught ReferenceError: offset is not defined(…)
+console.log(blockScope(true));
   </pre>
 </code>
 <h3>block scope</h3>

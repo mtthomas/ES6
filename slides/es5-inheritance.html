@@ -1,0 +1,19 @@
+<h2>ES5 Inheritance</h2>
+<pre><code class="js" data-trim>
+function Dog(){
+  Mammal.call(this, 4)
+}
+
+Dog.prototype = new Mammal()
+Dog.prototype.constructor = Dog
+
+Dog.prototype.bark = function(){
+  return "bark"
+}
+
+const dog = new Dog()
+console.log(dog.numberOfLegs) //4
+console.log(dog.walk()) //walking
+console.log(dog.bark()) //bark
+console.log(dog instanceof Dog) //true
+</code></pre>

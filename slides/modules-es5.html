@@ -1,0 +1,30 @@
+<h2>ES5 Modules</h2>
+<ul>
+  <li class="fragment">
+    <span>(Revealing) Module Pattern (IIFE)</span>
+    <pre style="margin: 0; margin-bottom: 15px;"><code data-trim class="js">
+(function($, exports){
+  /*
+    Immediately Invoked
+    Function Expression(IIFE)
+   */
+}(jquery, exports))
+    </code></pre>
+  </li>
+  <li class="fragment">
+    <span>CommonJS</span>
+    <pre style="margin: 0; margin-bottom: 15px;"><code data-trim class="js">
+var $ = require('jquery')
+
+module.exports = {/*...*/}
+    </code></pre>
+  </li>
+  <li class="fragment">
+    <span>Asynchronous module definition (AMD)</span>
+    <pre style="margin: 0"><code data-trim class="js">
+define(['jquery'] , function ($) {
+    return function () {};
+});
+    </code></pre>
+  </li>
+</ul>

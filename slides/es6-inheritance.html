@@ -1,0 +1,18 @@
+<h2>ES6 Inheritance</h2>
+<pre><code class="js" data-trim>
+class Dog extends Mammal{
+  constructor(){
+    super(4)
+  }
+  bark(){
+    return "bark"
+  }
+}
+
+const dog = new Dog()
+console.log(dog.numberOfLegs) //4
+console.log(dog.walk()) //walking
+console.log(dog.bark()) //bark
+console.log(dog instanceof Dog) //true
+</code></pre>
+<h3>syntactical sugar</h3>

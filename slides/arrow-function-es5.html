@@ -1,0 +1,21 @@
+<h2>Anonymous Function</h2>
+<pre><code class="js" data-trim>
+"use strict";
+class City{
+  constructor(name){
+    this.name = name;
+  }
+  createStreet(streetName){
+    const self = this
+    let addresses = [1,2,3].map(function(address){
+      return `${address} ${streetName} ${self.name}`
+    })
+
+    return addresses
+  }
+}
+
+const city = new City("Tomville")
+console.log(city.createStreet("Main St."))
+//["1 Main St. Tomville", "2 Main St. Tomville", "3 Main St. Tomville"]
+</code></pre>

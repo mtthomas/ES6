@@ -2,14 +2,32 @@
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
+    flex-flow: row nowrap;
 }
 
-.grid__column {
-    margin-right: 0;
+.grid__column--two {
+  flex: 2 0;
+}
+
+.grid__column--one{
+ flex: 1 0;
 }
 
 .reveal .title--center{
   margin-top: 25%;
+}
+
+.reveal .modules{
+  margin-bottom: 0.75em;
+}
+
+.reveal .modules__header{
+  text-align: left;
+  display: block;
+}
+
+.reveal .modules__example{
+  margin: 0
 }
 
 .reveal section img {
@@ -34,4 +52,8 @@
     font-weight: bold;
     color: #B7410E;
     text-transform: none;
+}
+
+.reveal .reset-list {
+	list-style: none;
 }
