@@ -10,9 +10,8 @@ function blockScope(addOffset){
   return newIndex = index - 10 + offset;
 }
 
-//Uncaught ReferenceError: index is not defined(…)
-//Uncaught ReferenceError: offset is not defined(…)
+//ReferenceError: index is not defined(…)
+//ReferenceError: offset is not defined(…)
 console.log(blockScope(true));
   </pre>
 </code>
-<h3>block scope</h3>

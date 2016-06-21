@@ -14,7 +14,12 @@
 }
 
 .reveal .title--center{
-  margin-top: 25%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.reveal h2 {
+  color: #f18a20;
 }
 
 .reveal .modules{
@@ -38,7 +43,7 @@
 
 .reveal section pre {
     box-shadow: none;
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 0;
     line-height: inherit;
 }
@@ -47,12 +52,12 @@
     max-height: none;
     padding: 7px;
 }
-
+/*
 .reveal .keyword {
     font-weight: bold;
     color: #B7410E;
     text-transform: none;
-}
+}*/
 
 .reveal .reset-list {
 	list-style: none;

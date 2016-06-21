@@ -3,16 +3,20 @@
 function generateId(){
   console.log("generating an id")
 }
-const prefix = "prefix"
 
+const prefix = "prefix"
 
 let factory = {
   generateId,
-  prefix,
-  suffix: "suffix"
+  [prefix + "_message"]: "message",
+  suffix: "suffix",
+  toString(){
+    return "factory"
+  }
 }
 
 console.log(factory.generateId()) //generating an id
-console.log(factory.prefix) //prefix
 console.log(factory.suffix) //suffix
+console.log(factory.toString()) //factory
+console.log(factory.prefix_message) //message
 </code></pre>

@@ -18,6 +18,8 @@ Reveal.initialize({
             condition: function() {
                 return !!document.querySelector('[data-external]');
             }
-        }
+        },{
+          src: 'ext/reveal/plugin/notes/notes.js', async: true
+        },
     ]
 });
