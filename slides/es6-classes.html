@@ -2,7 +2,13 @@
 <pre><code class="js" data-trim>
 class Mammal{
   constructor(numberOfLegs){
-    this.numberOfLegs = numberOfLegs
+    this._numberOfLegs = numberOfLegs
+  }
+  get numberOfLegs(){
+    return this._numberOfLegs
+  }
+  set numberOfLegs(){
+    this._numberOfLegs = numberOfLegs
   }
   walk(){ return "walking" }
 }
@@ -10,7 +16,6 @@ class Mammal{
 const mammal = new Mammal(2)
 console.log(mammal.numberOfLegs) //2
 console.log(mammal.walk()) //walking
-
 /*
 //TypeError: Class constructor Mammal cannot be invoked without 'new'(…)
 const mammal = Mammal()

@@ -3,13 +3,13 @@
 function usingConst(){
   const message = "Success"
 
+  //TypeError: Assignment to constant variable.
+  message = "Error"
+
   const messages = {
     success: "Success",
     error: "Error"
   }
-
-  //TypeError: Assignment to constant variable.
-  message = "Error"
 
   messages.success = "Error"
 

@@ -1,3 +1,10 @@
+footer {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+}
+
 .grid {
     display: -ms-flex;
     display: -webkit-flex;
@@ -13,7 +20,15 @@
  flex: 1 0;
 }
 
-.reveal .title--center{
+.reveal .author {
+  margin-top:5em
+}
+
+.reveal .author > h2 {
+  color: white;
+}
+
+.reveal .section-title{
   text-align: left;
   font-weight: bold;
 }
