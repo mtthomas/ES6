@@ -7,10 +7,10 @@ function generateId(){
 const prefix = "prefix"
 
 let factory = {
-  generateId,
-  [prefix + "_message"]: "message",
+  generateId, //generateId: generateId
+  [prefix + "_message"]: "message", //dynamic properties
   suffix: "suffix",
-  toString(){
+  toString(){ //shorthand for creating functions
     return "factory"
   }
 }

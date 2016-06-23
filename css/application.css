@@ -5,6 +5,10 @@ footer {
   bottom: 0;
 }
 
+.speaker-controls-notes .value {
+  font-size: 1.5em;
+}
+
 .grid {
     display: -ms-flex;
     display: -webkit-flex;

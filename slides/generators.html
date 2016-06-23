@@ -1,0 +1,21 @@
+<h2>Generators</h2>
+<pre><code class="js" data-trim>
+function* createId(){
+  var index = 0;
+  while(true){
+    yield index++;
+  }
+}
+
+var generator = createId();
+console.log(generator.next().value) //0
+console.log(generator.next().value) //1
+console.log(generator.next().value) //2
+</code></pre>
+<aside class="notes">
+  <ul>
+    <li>Allow you to easily use iterators (outside the scope of this talk)</li>
+    <li>Generators are created using function *</li>
+    <li>yield pauses and resumes a generator, releases the single JS thread</li>
+  </ul>
+</aside>

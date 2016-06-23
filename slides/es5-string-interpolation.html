@@ -1,4 +1,4 @@
-<h2>`String Interpolation and Multi-Line`</h2>
+<h2>ES5 String Interpolation and Multi-Line</h2>
 <pre><code data-trim class="js">
 let user = {
   name: "John Smith",
@@ -9,9 +9,9 @@ let user = {
 
 const postalCode: "90260"
 
-const address = `SHIP TO: ${user.name}
-${user.address}
-${user.city} ${user.state} ${postalCode}`
+const address = "SHIP TO:" + user.name + "\n"
+  + user.address + "\n"
+  + user.city + " " + user.state + " " + postalCode
 
 console.log(address)
 /*
@@ -22,7 +22,7 @@ Lawndale CA 90260
 </code></pre>
 <aside class="notes">
   <ul>
-    <li>eliminates plus signs and character escaping</li>
-    <li>works with object literals and variables</li>
+    <li>difficult to read</li>
+    <li>as developer you need to maintain this</li>
   </ul>
 </aside>

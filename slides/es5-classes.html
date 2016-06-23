@@ -1,7 +1,7 @@
 <h2>ES5 Classes</h2>
 <pre class="grid__column--two"><code class="javascript" data-trim>
 function Mammal(numberOfLegs){
-  this._numberOfLegs = numberOfLegs;
+  this.numberOfLegs = numberOfLegs;
 }
 
 Mammal.prototype.walk = function() { return "walking" }
@@ -18,3 +18,10 @@ console.log(mammal.walk())
  */
 
 </code></pre>
+<aside class="notes">
+  <ul>
+    <li>Need to use a function to define a class inorder to use this</li>
+    <li>The prototype is used for performance</li>
+    <li>JS can't tell the difference between a class and an function</li>
+  </ul>
+</aside>
